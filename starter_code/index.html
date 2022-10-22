@@ -20,10 +20,10 @@
 
   <body>
     <nav class="flex">
-      <div>
+      <div class="flex nav-desktop">
         <img class="logo" src="./images/slack-logo.png" alt="Slack logo" />
 
-        <ul class="deskopt-menu">
+        <ul class="desktop-menu">
           <li>
             <a href="#">Product</a>
           </li>
@@ -39,21 +39,21 @@
         </ul>
       </div>
 
-      <div>
+      <div class="flex">
         <button class="btn-nav">
           <img src="./images/icon-search.png" alt="Search icon" />
         </button>
 
-        <button class="btn-nav">
+        <button class="btn-nav desktop-hidden">
           <img src="./images/icon-menu.png" alt="Menu icon" />
         </button>
 
-        <ul hidden>
+        <ul hidden class="menu-visible-desktop">
           <li>
             <a href="#">Sign in</a>
           </li>
           <li>
-            <a href="#">Try for free</a>
+            <a class="btn-white a-nav" href="#">Try for free</a>
           </li>
         </ul>
       </div>
@@ -101,7 +101,7 @@
         </div>
       </section>
 
-      <section class="flex column">
+      <section id="team" class="flex column">
         <div>
           <img
             class="img-height"
@@ -126,7 +126,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="flexi">
         
           <div class="flex flexibility">
             <img
@@ -149,7 +149,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="speed">
         <div>
           <img class="img-height" src="./images/speed-mobile.png" alt="speed" />
         </div>
