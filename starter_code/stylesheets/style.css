@@ -122,7 +122,7 @@ h1+p {
 
 .sign-in>button,
 .btn-statistics>button,
-.buy-links> button {
+.buy-links>button {
   text-transform: uppercase;
   width: 90%;
   text-align: center;
@@ -256,23 +256,24 @@ main {
   font-size: 1.28rem;
 }
 
-#border-white{
+#border-white {
   border: 1px solid white
 }
 
-footer > img{
+footer>img {
   height: 3rem;
   width: auto;
 }
 
-.grid{
+.grid {
   max-width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   justify-items: start;
   margin: 0 0.5rem;
 }
-.links-footer>ul>li:first-child{
+
+.links-footer>ul>li:first-child {
   color: #000000;
   font-size: 0.68rem;
   padding: 0 0 0.5rem 0;
@@ -280,20 +281,20 @@ footer > img{
   font-weight: 600;
 }
 
-.links-footer>ul>li:not(:first-child){
+.links-footer>ul>li:not(:first-child) {
   color: #454245;
   font-size: 0.56rem;
   padding: 0.26rem 0;
   text-align: start;
 }
 
-hr{
-  color:#454245;
+hr {
+  color: #454245;
   max-width: 85%;
   align-self: center;
 }
 
-.list{
+.list {
   align-items: flex-start;
   color: #000000;
   font-weight: 600;
@@ -301,19 +302,148 @@ hr{
   margin: 0 1rem
 }
 
-.list>li:last-child{
-  color:#2E71A6;
+.list>li:last-child {
+  color: #2E71A6;
 }
 
-.icons{
+.icons {
   justify-content: space-around;
 }
 
-small{
-  color:#454245;
+small {
+  color: #454245;
   font-size: 0.5rem;
 }
 
-.margin{
+.margin {
   margin: 0.5rem 1rem;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .logo {
+    height: 4vh;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+  }
+
+  .hero {
+    min-width: 17rem;
+  }
+
+  .screenshot {
+    max-height: 11rem;
+  }
+
+  .head {
+    padding: 1.3rem;
+    align-items: flex-start;
+  }
+
+  h1 {
+    font-size: 4rem;
+    text-align: start;
+    padding: 0.2rem 2rem 0.2rem 0rem;
+  }
+
+  h1+p {
+    margin: 0.7rem;
+    padding: 0.2rem 2rem 0.2rem 0rem;
+    font-size: 1.2rem;
+  }
+
+  .sign-in {
+    align-items: flex-start;
+    width: 111%;
+  }
+
+  .companies>div>img{
+    height: 5vh;
+  }
+
+  .companies>p{
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+
+  .companies>div>img {
+    height: 5.5vh;
+    padding: 0 0 2.6rem;
+  }
+
+  .img-height {
+    height: 80vh;
+}
+
+h2{
+  font-size: 2rem;
+}
+
+.articles {
+  margin: 1.8rem 8rem;
+  align-items: flex-start;
+}
+
+#statistics>h3 {
+  font-size: 1.9rem;
+}
+
+#statistics>p {
+  font-size: 1.2rem;
+}
+
+.btn-statistics {
+  flex-direction: row;
+  gap: 1rem;
+  margin: 0 5rem;
+}
+
+#statistics > ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 1.6rem;
+  justify-items: center;
+}
+
+
+li{
+  max-width: 12rem;
+}
+
+.buy-links>h3{
+  padding: 2.5rem 0.5rem;
+  font-size: 2rem;
+}
+
+footer{
+  padding-top: 2rem;
+  margin: 1rem;
+}
+
+.links-footer>ul>li:first-child{
+  font-size: 0.8rem;
+}
+
+.links-footer>ul>li:not(:first-child){
+  font-size: 0.68rem;;
+}
+
+.list{
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.icons {
+  justify-content: flex-start;
+  gap: 2rem;
+  margin: 1rem 2rem;
+}
+
+small{
+  font-size: 0.6rem;
+}
 }
